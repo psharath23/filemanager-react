@@ -1,0 +1,147 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.heading {
+  font-weight: bold;
+}
+.files-container {
+  display: flex;
+}
+.files-list {
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  padding: 10px;
+}
+.properties {
+  background-color: black;
+  margin-left: 9px;
+  color: white;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-57%, -50%);
+}
+
+img {
+  width: 100px;
+  height: 120px;
+}
+
+.filemanager-nav {
+  display: flex;
+}
+
+.filemanager-nav .back-nav {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.filemanager-nav .back-nav img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.filemanager-nav .heading {
+  flex-basis: 50%;
+  justify-content: flex-start;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.file {
+  height: auto;
+  /* position: relative; */
+}
+
+.folder {
+  height: auto;
+  /* position: relative; */
+}
+.selected {
+  border: solid 1px blue;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+}
+
+.properties-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px grey;
+}
+
+.properties-header {
+  height: 30px;
+  background-color: #f7a600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.properties-h {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.properties-close {
+  width: 30px;
+  font-weight: bold;
+  background-color: red;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.custom-context-menu {
+  background-color: black;
+  border: solid 1px white;
+  min-height: 100px;
+  min-width: 150px;
+  z-index: 200;
+}
+
+.context-item {
+  background-color: black;
+  color: white;
+  padding: 10px 0px;
+  border: solid 1px white;
+}
+
+.context-item:hover {
+  background-color: gray;
+  color: black;
+  font-weight: bold;
+}
+
+.context-heading {
+  color: grey;
+  font-style: italic;
+  page-break-after: 10px 0px;
+  background-color: black;
+  border-bottom: solid 1px white;
+}
+
+.nav-path {
+  border: solid 0.5px black;
+  padding: 15px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.no-recs {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 2%;
+}
